@@ -8,11 +8,10 @@ while True:
     user_password = input("Ingrese la contraseña: ")
 
     if user_password == password:
-        print("¡Bienvedido!")
+        print("¡Bienvedido al Sistema!")
         break
     else:
-        print("¡Vaya!, Su contraseña es incorrecta.")
-        try_again = input("¿Desea intentar nuevamente? [s/n]: ")
+        try_again = input("¿Contraseña incorrecta ¿desea intentarlo nuevamente? [s/n]: ")
 
         if try_again not in valid_answers:
             print("¡Adiós!")
