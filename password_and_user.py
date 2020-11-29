@@ -1,8 +1,12 @@
-valid_answers = ["s", "S", "si", "Si", "SI", "sI"]
+valid_answers = ("s", "S", "si", "Si", "SI", "sI")
 password = "$PassWord!20#"
 
-print("***                      BIENVENIDO                      ***")
-print("*** Para ingresar al sistema debe ingresar su contraseña ***\n")
+header = """
+    ***                      BIENVENIDO                      ***
+    *** Para ingresar al sistema debe ingresar su contraseña ***
+    
+"""
+print(header)
 
 while True:
     user_password = input("Ingrese la contraseña: ")
